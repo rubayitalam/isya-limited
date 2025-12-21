@@ -1,15 +1,30 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #0F172A; /* Slate 900 */
-  --color-primary-foreground: #F8FAFC; /* Slate 50 */
-  --color-secondary: #F1F5F9; /* Slate 100 */
-  --color-secondary-foreground: #0F172A;
-  --color-accent: #00B894; /* Netguru-ish Green Accent */
+  --color-primary: #0f172a;
+  /* Slate 900 - Darker for more premium feel */
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #f8fafc;
+  /* Slate 50 - Cleaner background */
+  --color-secondary-foreground: #0f172a;
+
+  --color-accent: #f97316;
+  /* Orange 500 */
+  --color-accent-hover: #ea580c;
+  /* Orange 600 */
   --color-accent-foreground: #ffffff;
-  
+
+  --color-muted: #64748b;
+  /* Slate 500 */
+  --color-muted-foreground: #94a3b8;
+  /* Slate 400 */
+
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-mono: var(--font-geist-mono), ui-mono-serif, monospace;
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2.5rem;
 }
 
 :root {

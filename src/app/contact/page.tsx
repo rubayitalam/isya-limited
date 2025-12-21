@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 export const metadata: Metadata = {
     title: 'Contact Us',
-    description: 'Get in touch with Isya Limited. Phone, email, and UK headquarters information.',
+    description: 'Get in touch with Pixlo. Phone, email, and UK headquarters information.',
 };
 
 export default function ContactPage() {
@@ -61,7 +61,7 @@ export default function ContactPage() {
                             <div className="ml-6">
                                 <h3 className="text-lg font-bold text-slate-900">Email</h3>
                                 <p className="mt-2 text-slate-600">
-                                    info@isyalimited.com
+                                    pixlolimited@gmail.com
                                 </p>
                             </div>
                         </div>

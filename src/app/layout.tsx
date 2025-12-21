@@ -16,10 +16,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Isya Limited',
-    default: 'Isya Limited | Full IT Solutions & Software Services',
+    template: '%s | Pixlo',
+    default: 'Get a professional website and jumpstart your business | Pixlo',
   },
-  description: 'Isya Limited offers full stack web development, mobile apps, and custom software solutions. Based in the UK, serving clients globally.',
+  description: 'Pixlo offers full stack web development, mobile apps, and custom software solutions. Based in the UK, serving clients globally.',
 };
 
 export default function RootLayout({
@@ -28,9 +28,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col bg-slate-50`}
+        suppressHydrationWarning
       >
         <Navbar />
         <main className="flex-grow">{children}</main>

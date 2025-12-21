@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import EstimateForm from '@/components/forms/EstimateForm';
 
 export const metadata: Metadata = {
     title: 'Get an Estimate',
@@ -7,30 +8,20 @@ export const metadata: Metadata = {
 
 export default function EstimatePage() {
     return (
-        <div className="min-h-screen py-20 bg-slate-50">
+        <div className="min-h-screen py-32 bg-slate-50">
             <div className="container mx-auto px-4">
-                <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
-                    <div className="p-8 border-b border-slate-100 text-center">
-                        <h1 className="text-3xl font-bold text-slate-900">Estimate Your Project</h1>
-                        <p className="mt-2 text-slate-600">
-                            Tell us about your project requirements and we’ll get back to you with a detailed quote within 24 hours.
+                <div className="max-w-5xl mx-auto bg-white rounded-[2.5rem] shadow-2xl border border-slate-100 overflow-hidden relative group">
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-orange-50 rounded-full blur-3xl -mr-32 -mt-32 group-hover:bg-orange-100 transition-colors opacity-50"></div>
+
+                    <div className="p-12 lg:p-16 border-b border-slate-50 text-center relative z-10">
+                        <h2 className="text-xs font-black tracking-[0.3em] text-orange-600 uppercase mb-6">Expert Consultation</h2>
+                        <h1 className="text-4xl lg:text-5xl font-black text-slate-900 tracking-tight mb-6">Estimate Your Project</h1>
+                        <p className="text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed">
+                            Tell us about your project requirements and we'll get back to you with a detailed quote within 24 hours.
                         </p>
                     </div>
-                    <div className="w-full aspect-[1/1.5] md:aspect-[1/1.2] lg:h-[800px]">
-                        {/* 
-                TODO: Replace the src below with your actual Google Form Embed URL. 
-                Go to Google Forms -> Send -> Embed HTML -> Copy the src URL.
-                Example src: "https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true"
-             */}
-                        <iframe
-                            src="https://docs.google.com/forms/d/e/1FAIpQLSfKako4EZDZ13eK-DSACGTnhl_l_axfNUr3AjVckEKHj1E7mQ/viewform?embedded=true"
-                            width="100%"
-                            height="100%"
-                            className="border-none"
-                            title="Project Estimation Form"
-                        >
-                            Loading form...
-                        </iframe>
+                    <div className="p-12 lg:p-16 relative z-10">
+                        <EstimateForm />
                     </div>
                 </div>
             </div>

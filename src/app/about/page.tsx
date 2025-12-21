@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
     title: 'About Us',
-    description: 'Learn about Isya Limited, a UK-based technology partner delivering excellence in software development.',
+    description: 'Learn about Pixlo, a UK-based technology partner delivering excellence in software development.',
 };
 import { Button, buttonVariants } from '@/components/ui/Button';
 import { Target, Eye, Globe } from 'lucide-react';
@@ -24,7 +24,7 @@ export default function AboutPage() {
                         </div>
                         <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Building the Future Together</h1>
                         <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
-                            Isya Limited is a UK-based technology partner for comprehensive IT solutions. We bridge the gap between complex technology and business growth.
+                            Pixlo is a UK-based technology partner for comprehensive IT solutions. We bridge the gap between complex technology and business growth .
                         </p>
                     </div>
                 </div>
@@ -68,7 +68,7 @@ export default function AboutPage() {
                 <div className="max-w-3xl mx-auto text-center space-y-8">
                     <h2 className="text-3xl font-bold text-slate-900">Ready to work with us?</h2>
                     <p className="text-lg text-slate-600">
-                        Join the companies who trust Isya Limited with their critical software infrastructure.
+                        Join the companies who trust Pixlo with their critical software infrastructure.
                     </p>
                     <div className="flex justify-center gap-4">
                         <Link href="/estimate" className={cn(buttonVariants({ size: 'lg' }))}>
